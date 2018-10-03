@@ -47,6 +47,12 @@ call plug#begin('~/.vim/plugged')
 Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
 Plug 'jrosiek/vim-mark'
+
+Plug 'rking/ag.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'Valloric/MatchTagAlways'
+Plug 'Valloric/YouCompleteMe'
 call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
