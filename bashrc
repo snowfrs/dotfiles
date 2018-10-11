@@ -33,6 +33,17 @@ export PATH=/tool/gnu/gcc/7.3/bin:$PATH
 #export LD_LIBRARY_PATH=/tool/gnu/gcc/7.3/lib64:/tool/gnu/mpc/1.1.0/lib:/tool/gnu/mpfr/4.0.1/lib:/tool/gnu/gmp/6.1.2/lib:/tool/gnu/isl/0.20/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/tool/gnu/gcc/7.3/lib64:$LD_LIBRARY_PATH
 
-### Alpine #
+### Perl ###
+export PATH=/tool/gnu/perl/5.26.2/bin:$PATH
+
+### Python 2.7.15 ###
+#export PATH=/tool/gnu/python/2.7.15/bin:$PATH
+export PATH=/tool/gnu/python/3.5.6/bin:$PATH
+
+#### git 2.19.1 ###
+export PATH=/tool/gnu/git/2.19.1/bin:$PATH
+
+### Alpine ###
 export PATH=$PATH:/tool/app/alpine/2.21/bin
+
 ############# End of custom settings ################
