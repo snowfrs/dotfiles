@@ -8,7 +8,7 @@
 alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
-# custom settings #
+### custom settings ###
 colors() {
 	local fgc bgc vals seq0
 
@@ -124,7 +124,7 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 
 
 
-# GPG #
+### GPG ###
 if [ -f "${HOME}/.gpg-agent-info" ]; then
 	. "${HOME}/.gpg-agent-info"
 	export GPG_AGENT_INFO
@@ -133,17 +133,17 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 fi
 export GPG_TTY=$(tty)
 
-# Arch Linux #
+### Arch Linux ###
  export SSH_AUTH_SOCK="/run/user/$UID/gnupg/S.gpg-agent.ssh"
  gpg-connect-agent updatestartuptty /bye
 
-# linux #
+### linux ###
 # export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
 # gpgconf --launch gpg-agent
 
 
 
-# GCC 7.3 #
+### GCC 7.3 ###
 #export PATH=/tool/gnu/gcc/7.3/bin:/tool/gnu/binutils/2.31.1/bin:$PATH
 export PATH=/tool/gnu/gcc/7.3/bin:$PATH
 #export LD_LIBRARY_PATH=/tool/gnu/gcc/7.3/lib64:/tool/gnu/mpc/1.1.0/lib:/tool/gnu/mpfr/4.0.1/lib:/tool/gnu/gmp/6.1.2/lib:/tool/gnu/isl/0.20/lib:$LD_LIBRARY_PATH
