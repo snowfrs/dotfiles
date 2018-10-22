@@ -152,7 +152,7 @@ export LD_LIBRARY_PATH=/tool/gnu/gcc/7.3/lib64:$LD_LIBRARY_PATH
 ### Perl ###
 export PATH=/tool/gnu/perl/5.26.2/bin:$PATH
 
-### Python 2.7.15 ###
+### Python  ###
 #export PATH=/tool/gnu/python/2.7.15/bin:$PATH
 export PATH=/tool/gnu/python/3.5.6/bin:$PATH
 
@@ -165,4 +165,7 @@ export PATH=$PATH:/tool/app/alpine/2.21/bin
 # firefox 60 esr #
 export PATH=/tool/app/firefox:$PATH
 
+# subversion
+export PATH=/tool/apache/subversion/1.10.3/bin:$PATH
+export LD_LIBRARY_PATH=/tool/apache/apr/1.6.5/lib:/tool/apache/apr-util/1.6.1/lib:/tool/apache/serf/1.3.9/lib:$LD_LIBRARY_PATH
 ############# End of custom settings ################
