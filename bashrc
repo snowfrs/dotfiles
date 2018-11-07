@@ -162,9 +162,6 @@ export PATH=/tool/gnu/git/2.19.1/bin:$PATH
 ### Alpine ###
 export PATH=$PATH:/tool/app/alpine/2.21/bin
 
-# firefox 60 esr #
-export PATH=/tool/app/firefox:$PATH
-
 # subversion
 export PATH=/tool/apache/subversion/1.10.3/bin:$PATH
 export LD_LIBRARY_PATH=/tool/apache/apr/1.6.5/lib:/tool/apache/apr-util/1.6.1/lib:/tool/apache/serf/1.3.9/lib:$LD_LIBRARY_PATH
