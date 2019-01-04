@@ -57,3 +57,11 @@ call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
 
+"" Tex settings
+filetype plugin indent on
+set grepprg=grep\ -nH\ $*
+let g:tex_flavor = "latex"
+"" /usr/share/vim/vimfiles
+set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
+
+
