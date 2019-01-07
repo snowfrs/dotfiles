@@ -26,6 +26,7 @@ set undolevels=1000	" Number of undo levels
 set backspace=indent,eol,start	" Backspace behaviour
 
 set background=dark	" dark or light
+set mouse=a " Enable the use of mouse
 syntax	on
  
  
@@ -53,6 +54,8 @@ Plug 'kien/ctrlp.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'Valloric/MatchTagAlways'
 Plug 'Valloric/YouCompleteMe'
+
+Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
@@ -63,5 +66,4 @@ set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 "" /usr/share/vim/vimfiles
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
-
 
