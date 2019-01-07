@@ -194,3 +194,21 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
   		ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=8'
     ;;
 esac
+
+# for GPG
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+	. "${HOME}/.gpg-agent-info"
+	export GPG_AGENT_INFO
+	export SSH_AUTH_SOCK
+	export SSH_AGENT_PID
+fi
+
+export GPG_TTY=$(tty)
+# for Arch Linux
+ gpg-connect-agent updatestartuptty /bye
+ unset SSH_AGENT_PID
+ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+# for linux
+# export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+# gpgconf --launch gpg-agent
