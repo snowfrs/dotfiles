@@ -43,7 +43,7 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
- Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 
 Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
@@ -67,3 +67,5 @@ let g:tex_flavor = "latex"
 "" /usr/share/vim/vimfiles
 set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/after
 
+"" clipboard
+set clipboard=unnamed
