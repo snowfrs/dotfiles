@@ -195,27 +195,6 @@ case $(basename "$(cat "/proc/$PPID/comm")") in
     ;;
 esac
 
-# for GPG
-if [ -f "${HOME}/.gpg-agent-info" ]; then
-	. "${HOME}/.gpg-agent-info"
-	export GPG_AGENT_INFO
-	export SSH_AUTH_SOCK
-	export SSH_AGENT_PID
-fi
-
-export GPG_TTY=$(tty)
-# for Arch Linux
- gpg-connect-agent updatestartuptty /bye
- unset SSH_AGENT_PID
- export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
-
-# for linux
-# export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
-# gpgconf --launch gpg-agent
-# If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
-
-
 #################################
 # oh-my-zsh 
 # ###############################
@@ -314,3 +293,29 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+#####################
+# custom settings
+#
+# for GPG
+if [ -f "${HOME}/.gpg-agent-info" ]; then
+	. "${HOME}/.gpg-agent-info"
+	export GPG_AGENT_INFO
+	export SSH_AUTH_SOCK
+	export SSH_AGENT_PID
+fi
+
+export GPG_TTY=$(tty)
+# for Arch Linux
+ gpg-connect-agent updatestartuptty /bye
+ unset SSH_AGENT_PID
+ export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+
+# for linux
+# export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
+# gpgconf --launch gpg-agent
+# If you come from bash you might have to change your $PATH.
+# export PATH=$HOME/bin:/usr/local/bin:$PATH
+#
+#for GEM
+export PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
