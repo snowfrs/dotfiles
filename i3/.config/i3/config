@@ -238,6 +238,7 @@ exec_always xset r rate 200 25
 
 #exec zeal
 exec safeeyes
+exec_always copyq
 
 exec_always feh --bg-scale ~/.config/i3/wallpaper.png
 # exec_always ibus-daemon -drx
