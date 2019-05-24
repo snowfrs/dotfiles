@@ -168,7 +168,7 @@ export GPG_TTY=$(tty)
 ############# End of custom settings ################
 
 # texlive
-export MANPATH=/tools/gnu/texlive/2018/texmf-dist/doc/man
+export MANPATH=$MANPATH:/tools/gnu/texlive/2018/texmf-dist/doc/man
 export INFOPATH=/tools/gnu/texlive/2018/texmf-dist/doc/info
 export PATH=/tools/gnu/texlive/2018/bin/x86_64-linux:$PATH
 
