@@ -226,8 +226,9 @@ bindsym XF86MonBrightnessDown exec sudo xbacklight -dec 5 && killall -s USR1 py3
 exec ~/.config/i3/fcitx-watch.bash
 
 # Screenshot
-bindsym Mod1+Shift+3 exec "bash -c \\"maim ~/Downloads/$(date +%F-%T).png\\""
-bindsym Mod1+Shift+4 exec "bash -c \\"maim -s ~/Downloads/$(date +%F-%T).png\\""
+#bindsym Mod1+Shift+3 exec "bash -c \\"maim ~/Downloads/$(date +%F-%T).png\\""
+#bindsym Mod1+Shift+4 exec "bash -c \\"maim -s ~/Downloads/$(date +%F-%T).png\\""
+bindsym $mod+F1 exec "bash ~/.config/i3/scrot.sh"
 
 for_window [class="Zeal"] floating enable
 for_window [class="Zeal"] resize set 1000 800

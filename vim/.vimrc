@@ -44,18 +44,19 @@ call plug#begin('~/.vim/plugged')
 
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-
 Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
 Plug 'jrosiek/vim-mark'
-
 Plug 'rking/ag.vim'
 Plug 'kien/ctrlp.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'Valloric/MatchTagAlways'
 Plug 'Valloric/YouCompleteMe'
-
 Plug 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plug 'godlygeek/tabular'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
+Plug 'tpope/vim-git'
 call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
@@ -69,3 +70,28 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,~/.vim/afte
 
 "" clipboard
 set clipboard=unnamed
+
+"" markdown preview
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+let g:mkdp_command_for_global = 0
+let g:mkdp_open_to_the_world = 0
+let g:mkdp_open_ip = ''
+let g:mkdp_browser = ''
+let g:mkdp_echo_preview_url = 0
+let g:mkdp_browserfunc = ''
+let g:mkdp_previes_options = {
+	\ 'mkit': {},
+	\ 'katex': {},
+	\ 'uml': {},
+	\ 'maid': {},
+	\ 'disable_sync_scroll': 0,
+	\ 'sync_scroll_type': 'middle',
+	\ 'hide_yaml_meta': 1
+	\ }
+let g:mkdp_markdown_css = ''
+let g:mkdp_highlight_css = ''
+let g:mkdp_port = ''
+let g:mkdp_page_title ='「${name}」'
+
