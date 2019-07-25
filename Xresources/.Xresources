@@ -24,7 +24,7 @@ URxvt*font: xft:Inconsolata:size=11,xft:DejaVu Sans Mono:size=11,xft:WenQuanYi M
 ! Fix font space
 URxvt*letterSpace: -1
 
-URxvt.inputMethod: fcitx-sunpinyin
+URxvt.inputMethod: fcitx-rime
 URxvt.preeditType: OverTheSpot
 
 ! Scrollbar

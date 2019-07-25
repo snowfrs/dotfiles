@@ -36,7 +36,7 @@ popup_during_fullscreen smart
 focus_on_window_activation focus
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
