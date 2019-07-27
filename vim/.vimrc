@@ -95,3 +95,5 @@ let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
 let g:mkdp_page_title ='「${name}」'
 
+"" decimal default
+set nrformats=
