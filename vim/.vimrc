@@ -57,6 +57,8 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'tpope/vim-git'
+Plug 'tmux-plugins/vim-tmux-focus-events'
+Plug 'roxma/vim-tmux-clipboard'
 call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
