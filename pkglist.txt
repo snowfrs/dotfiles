@@ -2,6 +2,7 @@ acpi_call-dkms
 acpid
 adobe-source-han-sans-cn-fonts
 adobe-source-han-sans-otc-fonts
+adobe-source-han-serif-cn-fonts
 adobe-source-sans-pro-fonts
 adobe-source-serif-pro-fonts
 alsa-utils
@@ -14,6 +15,7 @@ autoconf
 automake
 bash
 bash-completion
+bbswitch-dkms
 bind-tools
 binutils
 bison
@@ -68,6 +70,8 @@ graphviz
 grep
 groff
 grub
+gvfs
+gvfs-mtp
 gzip
 htop
 hwinfo
@@ -185,7 +189,9 @@ ttf-inconsolata
 ttf-monaco
 typora
 udftools
+unbound
 usbutils
+user-manager
 util-linux
 v2ray
 veracrypt
