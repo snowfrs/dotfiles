@@ -4,12 +4,14 @@
 ! Xft settings
 !-------------------------------------------------------------------------------
 
-!Xft.dpi:                    96
+Xft.dpi:                    96
 !Xft.dpi:                    144
-!Xft.antialias:              false
-!Xft.rgba:                   rgb
-!Xft.hinting:                true
-!Xft.hintstyle:              hintslight
+Xft.antialias:              true
+Xft.rgba:                   rgb
+Xft.hinting:                true
+Xft.autohit:				false
+Xft.hintstyle:              hintslight
+Xft.lcdfilter:				lcddefault
 
 !-------------------------------------------------------------------------------
 ! URxvt settings
