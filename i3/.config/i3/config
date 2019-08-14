@@ -253,7 +253,7 @@ exec_always xset r rate 200 25
 exec safeeyes
 exec_always copyq
 
-exec_always feh --bg-scale ~/.config/i3/wallpaper.png
+exec_always feh --bg-scale ~/.config/i3/wall.png
 # exec_always ibus-daemon -drx
 exec_always fcitx -dr
 #exec --no-startup-id xrandr --output DP1 --auto --primary --output HDMI1 --auto --left-of DP1
