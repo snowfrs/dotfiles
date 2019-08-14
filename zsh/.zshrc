@@ -294,10 +294,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#####################
-# custom settings
-#
-# for GPG
+################################
+#: Custom Settings {{{
+
+#: for GPG
 if [ -f "${HOME}/.gpg-agent-info" ]; then
 	. "${HOME}/.gpg-agent-info"
 	export GPG_AGENT_INFO
@@ -306,6 +306,7 @@ if [ -f "${HOME}/.gpg-agent-info" ]; then
 fi
 
 export GPG_TTY=$(tty)
+
 # for Arch Linux
  gpg-connect-agent updatestartuptty /bye
  unset SSH_AGENT_PID
@@ -317,8 +318,17 @@ export GPG_TTY=$(tty)
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 #
-#for GEM
+
+# for GEM
 export PATH=$PATH:$HOME/.gem/ruby/2.6.0/bin
 
 export PS1="[%~]$% "
+
+# for kitty
+autoload -Uz compinit
+compinit
+# Completion for kitty
+kitty + complete setup zsh | source /dev/stdin
+#: }}}
 ####################################
+
