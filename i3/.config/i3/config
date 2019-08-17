@@ -6,8 +6,8 @@ set $mod Mod4
 font pango: Taskbar, Cantarell 13
 
 # Gaps
-# gaps inner 5
-# smart_gaps on
+gaps inner 5
+smart_gaps on
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
@@ -208,7 +208,8 @@ bindsym $mod+r mode "resize"
 bar {
   position top
   separator_symbol " | "
-  status_command py3status -b -c ~/.config/i3/i3status.conf -i ~/.config/i3/i3status.modules/
+#  status_command py3status -b -c ~/.config/i3/i3status.conf -i ~/.config/i3/i3status.modules/
+	status_command py3status --dbus-notify
   # tray_output none
   colors {
 	# Whole color settings
