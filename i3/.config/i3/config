@@ -11,7 +11,7 @@ font pango: Taskbar, Cantarell 13
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-#font pango:DejaVu Sans Mono 8
+# font pango:DejaVu Sans Mono 8
 
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
@@ -208,9 +208,9 @@ bindsym $mod+r mode "resize"
 bar {
   position top
   separator_symbol " | "
-#  status_command py3status -b -c ~/.config/i3/i3status.conf -i ~/.config/i3/i3status.modules/
-	status_command py3status --dbus-notify
-  # tray_output none
+# status_command py3status -b -c ~/.config/i3/i3status.conf -i ~/.config/i3/i3status.modules/
+  status_command py3status --dbus-notify
+# tray_output none
   colors {
 	# Whole color settings
     separator $color_bright_gray
