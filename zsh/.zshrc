@@ -329,6 +329,24 @@ autoload -Uz compinit
 compinit
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
-#: }}}
+
+#: antigen
+source /usr/share/zsh/share/antigen.zsh
+antigen use oh-my-zsh
+
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+
+antigen bundle zsh-users/zsh-syntax-highlighting
+
+antigen theme robbyrussell
+
+antigen apply
+
+source ~/dotfiles/zsh/alias.zsh
+#: End of Custom Settings }}}
 ####################################
 

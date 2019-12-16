@@ -45,7 +45,7 @@ popup_during_fullscreen smart
 focus_on_window_activation focus
 
 # Start a terminal
-bindsym $mod+Return exec kitty
+bindsym $mod+Return exec xfce4-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -258,7 +258,7 @@ exec_always feh --bg-scale ~/.config/i3/wall.png
 # exec_always ibus-daemon -drx
 exec_always fcitx -dr
 #exec --no-startup-id xrandr --output DP1 --auto --primary --output HDMI1 --auto --left-of DP1
-exec_always  xrandr --output DP-1-3 --auto --primary --output DP-1-2 --auto --right-of DP-1-3 --output eDP-1 --off
+exec_always  xrandr --output DP-1-2 --auto --primary --output DP-1-3 --auto --right-of DP-1-2
 
 # dockd (Lenovo ThinkPad Dock Management Daemon) 
-# exec --no-startup-id dockd --daemon
+exec --no-startup-id dockd --daemon
