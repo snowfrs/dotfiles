@@ -213,7 +213,7 @@ bar {
 # tray_output none
   colors {
 	# Whole color settings
-    separator $color_bright_gray
+    separator  $color_bright_gray
     background $color_normal_gray
     statusline $color_bright_white
 
