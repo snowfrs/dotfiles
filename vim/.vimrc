@@ -43,7 +43,12 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'vim-python/python-syntax'
+Plug 'hsitz/VimOrganizer'
 Plug 'majutsushi/tagbar'
 Plug 'bling/vim-airline'
 Plug 'jrosiek/vim-mark'
@@ -62,9 +67,24 @@ Plug 'roxma/vim-tmux-clipboard'
 call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+let NERDTreeShowLineNumbers=1
+let NERDTreeShowHidden=1
+let NERDTreeMinimalUI = 1
 
 "" Tex settings
 filetype plugin indent on
+syntax enable
+set laststatus=2
+let g:rehash256 = 1
+let g:Powerline_symbols='unicode'
+let g:Powerline_theme='long'
+
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_powerline_fonts = 1
+let g:airline_theme='angr'
+
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor = "latex"
 "" /usr/share/vim/vimfiles
