@@ -249,7 +249,7 @@ ZSH_THEME="robbyrussell"
 # "mm/dd/yyyy"|"dd.mm.yyyy"|"yyyy-mm-dd"
 # or set a custom format using the strftime function format specifications,
 # see 'man strftime' for details.
-# HIST_STAMPS="mm/dd/yyyy"
+  HIST_STAMPS="mm/dd/yyyy"
 
 # Would you like to use another custom folder than $ZSH/custom?
 # ZSH_CUSTOM=/path/to/new-custom-folder
@@ -260,7 +260,7 @@ ZSH_THEME="robbyrussell"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
-  git
+  git python
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -273,11 +273,11 @@ source $ZSH/oh-my-zsh.sh
 # export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-# if [[ -n $SSH_CONNECTION ]]; then
-#   export EDITOR='vim'
-# else
-#   export EDITOR='mvim'
-# fi
+if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='vim'
+else
+  export EDITOR='vim'
+fi
 
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
@@ -296,6 +296,7 @@ source $ZSH/oh-my-zsh.sh
 
 ################################
 #: Custom Settings {{{
+export TERM="st-256color"
 
 #: for GPG
 if [ -f "${HOME}/.gpg-agent-info" ]; then
@@ -349,4 +350,3 @@ antigen apply
 source ~/dotfiles/zsh/alias.zsh
 #: End of Custom Settings }}}
 ####################################
-
