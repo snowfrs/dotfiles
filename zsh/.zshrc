@@ -296,7 +296,7 @@ fi
 
 ################################
 #: Custom Settings {{{
-export TERM="st-256color"
+#export TERM="st-256color"
 
 #: for GPG
 if [ -f "${HOME}/.gpg-agent-info" ]; then
@@ -348,5 +348,6 @@ antigen theme robbyrussell
 antigen apply
 
 source ~/dotfiles/zsh/alias.zsh
+source ~/dotfiles/zsh/emoji-log.zsh
 #: End of Custom Settings }}}
 ####################################
