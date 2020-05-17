@@ -118,11 +118,6 @@ shopt -s expand_aliases
 # Enable history appending instead of overwriting.  #139609
 shopt -s histappend
 
-# better yaourt colors
-export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1;41;5:votes=1;44:dsc=0:other=1;35"
-
-
-
 
 ### GPG ###
 if [ -f "${HOME}/.gpg-agent-info" ]; then
@@ -141,35 +136,9 @@ export GPG_TTY=$(tty)
 # export SSH_AUTH_SOCK="${HOME}/.gnupg/S.gpg-agent.ssh"
 # gpgconf --launch gpg-agent
 
-
-
-### GCC 7.3 ###
-#export PATH=/tool/gnu/gcc/7.3/bin:/tool/gnu/binutils/2.31.1/bin:$PATH
-#export PATH=/tool/gnu/gcc/7.3/bin:$PATH
-#export LD_LIBRARY_PATH=/tool/gnu/gcc/7.3/lib64:/tool/gnu/mpc/1.1.0/lib:/tool/gnu/mpfr/4.0.1/lib:/tool/gnu/gmp/6.1.2/lib:/tool/gnu/isl/0.20/lib:$LD_LIBRARY_PATH
-#export LD_LIBRARY_PATH=/tool/gnu/gcc/7.3/lib64:$LD_LIBRARY_PATH
-
-### Perl ###
-#export PATH=/tool/gnu/perl/5.26.2/bin:$PATH
-
-### Python  ###
-#export PATH=/tool/gnu/python/2.7.15/bin:$PATH
-#export PATH=/tool/gnu/python/3.5.6/bin:$PATH
-
-#### git 2.19.1 ###
-#export PATH=/tool/gnu/git/2.19.1/bin:$PATH
-
-### Alpine ###
-#export PATH=$PATH:/tool/app/alpine/2.21/bin
-
-# subversion
-#export PATH=/tool/apache/subversion/1.10.3/bin:$PATH
-#export LD_LIBRARY_PATH=/tool/apache/apr/1.6.5/lib:/tool/apache/apr-util/1.6.1/lib:/tool/apache/serf/1.3.9/lib:$LD_LIBRARY_PATH
 ############# End of custom settings ################
 
-# texlive
-export MANPATH=$MANPATH:/tools/gnu/texlive/2018/texmf-dist/doc/man
-export INFOPATH=/tools/gnu/texlive/2018/texmf-dist/doc/info
-export PATH=/tools/gnu/texlive/2018/bin/x86_64-linux:$PATH
 
 export VISUAL="vim"
+
+complete -C /usr/bin/aliyun aliyun

@@ -47,6 +47,7 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'vim-python/python-syntax'
 Plug 'hsitz/VimOrganizer'
 Plug 'majutsushi/tagbar'
@@ -64,6 +65,7 @@ Plug 'iamcco/markdown-preview.nvim', {'do': 'cd app & yarn install'}
 Plug 'tpope/vim-git'
 Plug 'tmux-plugins/vim-tmux-focus-events'
 Plug 'roxma/vim-tmux-clipboard'
+Plug 'morhetz/gruvbox'
 call plug#end()
 
 map <F2> :NERDTreeToggle<CR>
