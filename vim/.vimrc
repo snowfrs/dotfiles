@@ -121,3 +121,7 @@ let g:mkdp_page_title ='「${name}」'
 
 "" decimal default
 set nrformats=
+
+colorscheme desert
+set cursorcolumn
+set cursorline
