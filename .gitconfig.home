@@ -1,0 +1,9 @@
+[include]
+path = ~/dotfiles/.gitconfig.common
+
+[commit]
+gpgsign = true
+
+[user]
+eamil = git@snowfrs.com
+signingkey = FB4F5EFDBAB0107E9B52EBCD98971053883E7523
