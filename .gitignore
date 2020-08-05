@@ -1,3 +1,9 @@
 vim/.vim/plugged
 *.pyc
 *.old
+__pycache__
+tags
+*.tar
+*.tar.*
+*.log
+.uuid
