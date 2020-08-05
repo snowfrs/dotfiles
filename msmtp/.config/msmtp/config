@@ -1,0 +1,11 @@
+defaults
+tls on
+tls_starttls off
+port 465
+
+account fastmail
+host smtp.fastmail.com
+auth on
+user snow@mm.st
+passwordeval cat ~/.cache/mail.fastmail.com
+logfile ~/.cache/msmtp.log

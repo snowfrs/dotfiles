@@ -1,0 +1,21 @@
+IMAPStore fastmail-remote
+Host "imap.fastmail.com"
+User "snow@mm.st"
+PassCmd "cat ~/.cache/mail.fastmail.com"
+CertificateFile /etc/ssl/certs/ca-certificates.crt
+SSLType IMAPS
+
+MaildirStore local
+Path ~/mail/
+Inbox ~/mail/INBOX
+SubFolders Verbatim
+
+Channel fastmail
+Master :fastmail-remote:
+Slave  :local:
+Create Slave
+Expunge Slave
+Sync Pull
+CopyArrivalDate yes
+Patterns *
+SyncState *
