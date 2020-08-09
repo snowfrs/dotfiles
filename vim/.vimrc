@@ -85,6 +85,7 @@ set laststatus=2
 let g:rehash256 = 1
 let g:Powerline_symbols='unicode'
 let g:Powerline_theme='long'
+let g:powerline_pycmd='py3'
 
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1

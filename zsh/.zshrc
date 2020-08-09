@@ -348,6 +348,7 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen theme robbyrussell
 
 antigen apply
+#: end of antigen
 
 source ~/dotfiles/zsh/alias.zsh
 source ~/dotfiles/zsh/emoji-log.zsh
