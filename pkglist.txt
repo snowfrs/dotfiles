@@ -1,3 +1,4 @@
+389-ds-base
 acpi
 acpi_call
 acpid
@@ -9,6 +10,7 @@ adobe-source-serif-pro-fonts
 aliyun-cli
 anki
 ansible
+antigen
 arch-audit
 archlinuxcn-keyring
 aria2-fast
@@ -45,6 +47,7 @@ cyrus-sasl
 darktable
 deadbeef
 diff-so-fancy
+ditaa
 docker-compose
 dos2unix
 dot2tex
@@ -76,6 +79,7 @@ hsetroot
 htop
 hwinfo
 i3status-rust-git
+i7z
 intel-ucode
 inxi
 iotop
@@ -157,6 +161,8 @@ papirus-icon-theme
 pass
 pavucontrol
 pcsc-tools
+percona-server
+percona-server-clients
 perl-ldap
 perl-object-multitype
 perl-xml-rss
@@ -170,8 +176,12 @@ plasma-pa
 plasma-sdk
 plasma-thunderbolt
 playerctl
+plex-media-server
 podman
 ponymix
+powerline
+powerline-fonts
+powerline-vim
 privoxy
 procmail
 prometheus
@@ -271,6 +281,7 @@ vim-gruvbox-community
 vim-nerdtree
 vimiv
 virt-manager
+visual-studio-code-bin
 vnstat
 waybar
 webkit2gtk
@@ -280,8 +291,10 @@ wqy-microhei
 wqy-zenhei
 xdg-desktop-portal-kde
 xdg-user-dirs
+xdot
 xf86-input-synaptics
 xf86-input-vmmouse
+xf86-video-intel
 xf86-video-vmware
 xfce4-panel
 xfce4-terminal
@@ -298,6 +311,7 @@ yay
 yubikey-manager-qt
 yubikey-personalization-gui
 yubikey-touch-detector
+zim
 zoom
 zsh-autosuggestions
 zsh-completions
