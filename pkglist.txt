@@ -59,6 +59,7 @@ elementary-icon-theme
 faac
 faad2
 fcitx-rime
+fdk-aac-free
 firefox
 firewalld
 flameshot
@@ -102,6 +103,7 @@ lhasa
 libdbusmenu-gtk2
 libguestfs
 libindicator-gtk2
+libldac
 libmad
 libmikmod
 libmp4v2
@@ -187,6 +189,8 @@ procmail
 prometheus
 proton
 proxychains-ng
+pulseaudio-alsa
+pulseaudio-bluetooth
 py3status
 python-black
 python-cachecontrol
