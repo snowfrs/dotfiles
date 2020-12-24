@@ -15,7 +15,7 @@ scrollback_lines = 65536
 search_wrap = true
 #icon_name = terminal
 #geometry = 640x480
-transparency = 0.2
+transparency = 0.1
 # "system", "on" or "off"
 cursor_blink = system
 
@@ -24,7 +24,6 @@ cursor_shape = block
 
 # $BROWSER is used by default
 browser = chromium
-# browser = qutebrowser
 
 # word characters used for word selection
 # (default if unset: all graphic non-punctuation/space characters)
@@ -124,8 +123,9 @@ browser = chromium
 
 # Molokai theme
 # [colors]
-background= rgba(31,34,39,0.95)
-foreground= #d0d0d0
+background= rgba(31,34,39,1.00)
+foreground= rgba(0,163,226,1.00)
+#foreground= #d0d0d0
 #foreground= #66ff66
 highlight = #505050
 cursor = #66ff66
