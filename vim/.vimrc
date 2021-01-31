@@ -68,8 +68,8 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 ""gruvbox
-autocmd vimenter * colorscheme gruvbox
-set background=dark	" dark or light
+""autocmd vimenter * colorscheme gruvbox
+""set background=dark	" dark or light
 
 map <F2> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'

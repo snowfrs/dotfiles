@@ -1,5 +1,0 @@
-- `config`: Main i3 config file
-- `i3status.py`: **py3status** config file, `fontawesome` needs to be installed
-- `i3status.modules`: python modules for py3status
-- `*.png`: wallpaper & lockscreen wallpaper
-- `setled.c` `switch-ibus.bash`: used to switch IM via CapsLock
