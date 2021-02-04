@@ -122,6 +122,7 @@ export HISTTIMEFORMAT="%F %T `whoami` "
 export PS1="\n\e[1;37m[\e[m\e[1;35m\u\e[m\e[1;36m@\e[m\e[1;37m\H\e[m \e[1;33m\A\e[m \w\e[m\e[1;37m]\e[m\e[1;36m\e[m\n\\$ "
 
 # GPG
-gpg-connect-agent updatestartuptty /bye
+gpg-connect-agent updatestartuptty /bye > /dev/null
 unset SSH_AGENT_PID
+export GPG_TTY=$(tty)
 export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
