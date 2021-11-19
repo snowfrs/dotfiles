@@ -42,8 +42,6 @@ endif
 call plug#begin('~/.vim/plugged')
 
 " On-demand loading
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
 Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -68,8 +66,8 @@ Plug 'morhetz/gruvbox'
 call plug#end()
 
 ""gruvbox
-""autocmd vimenter * colorscheme gruvbox
-""set background=dark	" dark or light
+autocmd vimenter * colorscheme gruvbox
+set background=dark	" dark or light
 
 map <F2> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
@@ -126,6 +124,5 @@ let g:mkdp_page_title ='「${name}」'
 "" decimal default
 set nrformats=
 
-colorscheme desert
 set cursorcolumn
 set cursorline
